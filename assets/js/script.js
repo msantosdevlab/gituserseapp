@@ -14,10 +14,16 @@ let themeName = document.querySelector(".theme-name"),
   themeIcon = document.querySelector(".icon-theme"),
   themeChoose = localStorage.getItem("theme_choose");
 
+//_________ CHANGE PLACEHOLDER INPUT
+  if(window.matchMedia("(max-width: 350px)").matches){
+    inputSearch.setAttribute("placeholder", "Search username…");
+    console.dir(inputSearch.placeholder)
+  };
+
 //_________ VERIFY WHICH THEME HAS BEEN SAVED IN THE BROWSER
 if (themeChoose == "Dark") {
   changeColorTheme();
-}
+};
 
 //_________ CHANGE THE COLOR OF THE THEME
 function changeColorTheme() {
@@ -30,11 +36,11 @@ function changeColorTheme() {
   perfilName.classList.toggle("white-color");
 
   paragraphs.forEach(item => {
-    item.parentElement.classList.toggle("white-color-p");
+    item.parentElement.classList.toggle("white-color");
   });
 
   infoItens.forEach(item => {
-    item.parentElement.classList.toggle("white-color-p");
+    item.parentElement.classList.toggle("white-color");
   });
 
   vcardDetails.forEach(item => {
@@ -54,7 +60,7 @@ function changeColorTheme() {
     themeIcon.setAttribute("src", "assets/images/icon-moon.svg");
     localStorage.setItem("theme_choose", "Light");
   }
-}
+};
 
 //_________ CONSULT USER ON GITHUB
 const btnSearch = document.querySelector("#btnSearch"),
@@ -73,8 +79,8 @@ let input = document.querySelector("#search"),
   followers = document.querySelector(".followers"),
   following = document.querySelector(".following"),
   loc = document.querySelector(".location span"),
-  website = document.querySelector(".website a"),
-  twitter = document.querySelector(".twitter a"),
+  website = document.querySelector(".website span"),
+  twitter = document.querySelector(".twitter span"),
   company = document.querySelector(".company span"),
   user = "",
   consult = "";
@@ -119,10 +125,21 @@ function doResearch() {
 
       //VCARD DETAILS
       loc.textContent = item.location;
-      website.textContent = item.blog;
-      website.href = item.blog;
-      twitter.textContent = item.twitter_username;
-      twitter.href = "https://twitter.com/" + item.twitter_username;
+
+      if(item.blog == "Not Available"){
+        website.textContent = item.blog;
+       }else if(item.blog.substring(0,4) !== "http" ){
+        website.innerHTML = '<a href="http://' + item.blog + '" target="_blank">' + item.blog +'</a>';
+       }else{
+        website.innerHTML = '<a href="' + item.blog + '" target="_blank">' + item.blog +'</a>';
+      }
+
+      if(item.twitter_username == "Not Available"){
+        twitter.textContent = item.twitter_username;
+       }else{
+        twitter.innerHTML = '<a href="https://twitter.com/' + item.twitter_username + '" target="_blank">' + item.twitter_username +'</a>';
+      }
+
       company.textContent = item.company;
     })
     .catch(error => {
@@ -133,7 +150,13 @@ function doResearch() {
       divNumbers.classList.toggle("display-none");
       divVcard.classList.toggle("display-none");
     });
-}
+};
 
 theme.addEventListener("click", changeColorTheme);
 btnSearch.addEventListener("click", doResearch);
+inputSearch.addEventListener("keydown", (event) =>{
+    if(event.key === "Enter"){
+      event.preventDefault();
+      doResearch();
+    }
+});

@@ -1,9 +1,9 @@
 
-# GitHub - User Search APP
-O GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de demonstrar minhas habilidades. Esta aplicação simula uma ferramenta de busca que permite encontrar usuários no GitHub. 
+# DevFinder - GitHub User Search APP
+O DevFinder - GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de demonstrar minhas habilidades. Esta aplicação simula uma ferramenta de busca que permite encontrar usuários no GitHub. 
 
 ## Screenshot
-![](/assets/images/screenshot.png "Projeto: GitHub - User Search APP")
+![](/assets/images/screenshot.png "Projeto: DevFinder - GitHub User Search APP")
 
 ## Tecnologias utilizadas
 + HTML
@@ -11,7 +11,7 @@ O GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de
 + JavaScript
 
 ## Design
-O design deste projeto foi inspirado no desafio "GitHub - User Search APP" do Frontend Mentor. O Frontend Mentor é uma plataforma que oferece desafios de codificação para aprimorar as habilidades de desenvolvimento front-end.
+O design deste projeto foi inspirado no desafio "DevFinder - GitHub User Search APP" do Frontend Mentor. O Frontend Mentor é uma plataforma que oferece desafios de codificação para aprimorar as habilidades de desenvolvimento front-end.
 
 ## Funcionalidades
 + Pesquisar por nomes de usuários do GitHub

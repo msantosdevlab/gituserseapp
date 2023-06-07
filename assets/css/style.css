@@ -255,9 +255,9 @@ footer p {
 
 }
 .white-color, 
-.white-color-h1 h1, 
-.white-color-p p, 
-.white-color-a a,
+.white-color h1, 
+.white-color p, 
+.white-color a,
 .vcard-detail-white span,
 .vcard-detail-white a {
   color: #FFFFFF;
