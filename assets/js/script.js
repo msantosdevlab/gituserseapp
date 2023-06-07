@@ -38,7 +38,7 @@ function changeColorTheme() {
   });
 
   vcardDetails.forEach(item => {
-    item.children[1].classList.toggle("white-color");
+    item.classList.toggle("vcard-detail-white");
   });
 
   let themeIconAlt = themeIcon.getAttribute("alt");

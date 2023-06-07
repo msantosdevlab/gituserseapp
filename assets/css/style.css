@@ -217,7 +217,6 @@ input[type="button"]:hover {
 
 .vcard-detail {
   margin-bottom: 10px;
-  color: #4B6A9B;
 }
 
 .vcard-detail a, .vcard-detail span {
@@ -255,18 +254,12 @@ footer p {
   background-color: #1E2A47;
 
 }
-.white-color {
-  color: #FFFFFF;
-}
-
-.white-color-h1 h1 {
-  color: #FFFFFF;
-}
-.white-color-p p{
-  color: #FFFFFF;
-}
-
-.white-color-a a{
+.white-color, 
+.white-color-h1 h1, 
+.white-color-p p, 
+.white-color-a a,
+.vcard-detail-white span,
+.vcard-detail-white a {
   color: #FFFFFF;
 }
 
