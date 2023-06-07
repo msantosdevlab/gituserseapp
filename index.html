@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>GitHub - User Search APP</title>
+    <meta name="description" content="The GitHub User Search APP is a powerful search tool that allows you to quickly find users on GitHub. Discover profiles, repositories and projects from developers around the world.">
+    <meta name="robots" content="index, follow">
+  </head>
+  
+  <body class="light-body">
+    <header class="container">
+      <div class="flex header-head">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="Devfinder" class="">
+        </div>
+        <div class="color-theme flex">
+          <button id="theme">
+            <p class="theme-name">Dark</p>
+            <img src="./assets/images/icon-moon.svg" alt="Dark" width="20" height="20" class="icon-theme">
+          </button>
+        </div>
+      </div>
+      <div class="flex header-search light-container">
+        <input type="text" name="search" id="search" placeholder="Search GitHub username…">
+        <input type="button" value="Search" id="btnSearch">
+      </div>
+    </header>
+    <section class="container result light-container">
+      <div class="no-result"></div>
+      <div class="grid head">
+        <div class="image">
+          <img src="./assets/images/user.svg" alt="User" width="117" height="117">
+        </div>
+        <div class="perfil">
+          <h1>The Octacat</h1>
+          <span>
+            <a href="#" id="link-perfil" target="_blank">@jsjhsjhs</a>
+          </span>
+        </div>
+        <div class="joined">
+          <p>Joined 25 Jan 2021</p>
+        </div>
+      </div>
+      <div class="grid description">
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+        </div>
+      </div>
+      <div class="grid numbers">
+        <div class="flex infos">
+          <div class="info-repos info">
+            <p class="info-title">Repos</p>
+            <p class="info-number repos">8</p>
+          </div>
+          <div class="info-followers info">
+            <p class="info-title">Followers</p>
+            <p class="info-number followers">3938</p>
+          </div>
+          <div class="info-following info">
+            <p class="info-title">Following</p>
+            <p class="info-number following">9</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid vcard-details">
+        <div class="col-1">
+          <div class="vcard-detail location">
+            <img src="./assets/images/icon-location.svg" width="13" height="20" alt="Location">
+            <span>San Francisco</span>
+          </div>
+          <div class="vcard-detail website">
+            <img src="./assets/images/icon-website.svg" width="20" height="16" alt="Website">
+            <a href="#" target="_blank">https://github.blog</a>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="vcard-detail twitter">
+            <img src="./assets/images/icon-twitter.svg" width="20" height="20" alt="Twitter">
+            <a href="#" target="_blank">Not Available</a>
+          </div>
+          <div class="vcard-detail company">
+            <img src="./assets/images/icon-company.svg" width="20" height="20" alt="Company">
+            <span>@github</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>Design by Frontend Mentor</p>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

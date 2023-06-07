@@ -1,0 +1,11 @@
+# Ignore todos os arquivos:
+*.txt
+*.sketch
+*.fig
+*.xd
+
+# Ignore os arquivos de:
+_others/
+DS_Store/
+._others
+.DS_Store
