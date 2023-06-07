@@ -11,7 +11,7 @@ O GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de
 + JavaScript
 
 ## Design
-O design deste projeto foi inspirado no desafio "Modern Art Gallery" do Frontend Mentor. O Frontend Mentor é uma plataforma que oferece desafios de codificação para aprimorar as habilidades de desenvolvimento front-end.
+O design deste projeto foi inspirado no desafio "GitHub - User Search APP" do Frontend Mentor. O Frontend Mentor é uma plataforma que oferece desafios de codificação para aprimorar as habilidades de desenvolvimento front-end.
 
 ## Funcionalidades
 + Pesquisar por nomes de usuários do GitHub
