@@ -1,5 +1,5 @@
 
-# Modern Art Gallery
+# GitHub - User Search APP
 O GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de demonstrar minhas habilidades. Esta aplicação simula uma ferramenta de busca que permite encontrar usuários no GitHub. 
 
 ## Screenshot
