@@ -24,6 +24,3 @@ O design deste projeto foi inspirado no desafio "DevFinder - GitHub User Search 
 2. Abra o arquivo index.html em qualquer navegador web.
 3. Insira um nome de usuário do GitHub no campo de pesquisa.
 4. Clique no botão "Search" para obter as informações do usuário.
-
-## Contribuição
-Este projeto foi desenvolvido como parte de um portfólio pessoal. Não são aceitas contribuições no momento.
