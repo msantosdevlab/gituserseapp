@@ -1,6 +1,6 @@
 
 # DevFinder - GitHub User Search APP
-O DevFinder - GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de demonstrar minhas habilidades. Esta aplicação simula uma ferramenta de busca que permite encontrar usuários no GitHub. 
+O DevFinder - GitHub User Search APP é uma página fictícia desenvolvida com o objetivo de demonstrar minhas habilidades em JavaScript. Esta aplicação simula uma ferramenta de busca que permite encontrar usuários no GitHub. 
 
 ## Screenshot
 ![](/assets/images/screenshot.png "Projeto: DevFinder - GitHub User Search APP")
